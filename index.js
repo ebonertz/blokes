@@ -6,7 +6,7 @@ var argv = require('minimist')(process.argv.slice(2))
 
 var client = new SphereClient(Config)
 client.customers.fetch()
-.then(function (result){
+.then(function getCustomers(result){
   if (argv.expects) {
     if (argv.expects == result.body.count) {
       console.log('Expectation passed')
