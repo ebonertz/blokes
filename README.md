@@ -1,4 +1,4 @@
-** Blokes Node Worker **
+**Blokes Node Worker**
 
 This small node application calls to the commercetools API customers endpoint and prints all the data of the customers in the project.
 
