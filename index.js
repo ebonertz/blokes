@@ -39,7 +39,7 @@ client.orders.fetch()
     }
     } else {
       console.log(JSON.stringify(result))
-      console.log("There are no orders yet")
+      console.log("There are no orders yet, bro")
       process.exit(0)
     }
 })
