@@ -1,10 +1,9 @@
 var SphereClient = require('sphere-node-sdk').SphereClient
 var Config = require('./config.js')
 var http = require('http');
-
 var argv = require('minimist')(process.argv.slice(2))
-
 var client = new SphereClient(Config)
+
 client.customers.fetch()
 .then(function getCustomers(result){
   if (argv.expects) {
@@ -28,7 +27,7 @@ client.customers.fetch()
 })
 
 client.orders.fetch()
-.then( function getOrders(result){
+.then(function getOrders(result){
   if (argv.expects) {
     if (arg.expects == result.body.count) {
       console.log('Expectation passed')
