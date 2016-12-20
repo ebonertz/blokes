@@ -1,8 +1,9 @@
-var SphereClient = require('sphere-node-sdk').SphereClient
-var Config = require('./config.js')
-var http = require('http');
-var argv = require('minimist')(process.argv.slice(2))
-var client = new SphereClient(Config)
+const { SphereClient } = require('sphere-node-sdk')
+const Config = require('./config.js')
+const http = require('http')
+const argv = require('minimist')(process.argv.slice(2))
+console.log(`SphereClient: ${SphereClient}`)
+const client = new SphereClient(Config)
 
 client.customers.fetch()
 .then(function getCustomers(result){
@@ -38,7 +39,7 @@ client.orders.fetch()
     }
     } else {
       console.log(JSON.stringify(result))
-      console.log("There are no orders yet, bro")
+      console.log("There are no orders yet, sorry")
       process.exit(0)
     }
 })

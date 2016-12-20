@@ -1,6 +1,6 @@
 {
-  "name": "First CT Worker",
-  "description": "Pull Customers list from commercetools APi using Node.js",
+  "name": "Blokes",
+  "description": "Fetches all customers and orders from commercetools APi using Node.js SDK",
   "tags": [
     "sphere",
     "sphereio",
@@ -17,14 +17,20 @@
   },
   "private": false,
   "engines": {
-    "node": ">= 0.10.x"
+    "node": ">= 6.9.x"
   },
   "scripts": {
-    "start": "node hello.js",
-    "test": "node hello.js --expects 5"
+    "start": "node index.js",
+    "test": "node index.js --expects 5"
   },
   "dependencies": {
+    "babel-polyfill": "^6.16.0",
     "minimist": "latest",
-    "sphere-node-sdk": "latest"
+    "sphere-node-sdk": "^1.9",
+    "underscore": "^1.8.3",
+    "underscore-mixins": "^0.1.4"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
   }
 }
