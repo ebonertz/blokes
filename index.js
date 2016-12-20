@@ -19,7 +19,7 @@ client.customers.fetch()
     console.log(result, null, 2)
     console.log(JSON.stringify(result))
     console.log("These are all the Australian customers")
-    process.exit(0)
+    // process.exit(0)
   }
 })
 .catch(function (err){
@@ -40,7 +40,7 @@ client.orders.fetch()
     } else {
       console.log(JSON.stringify(result))
       console.log("There are no orders yet, sorry")
-      process.exit(0)
+      // process.exit(0)
     }
 })
 .catch(function (err){
