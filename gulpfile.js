@@ -1,7 +1,9 @@
-var gulp = require('gulp');
+const gulp = require('gulp');
+const eslint = require('gulp-eslint');
+const run = require('run-sequence');
 
 const paths = {
-  js: ['./src/**/*.js'],
+  js: ['./*.js'],
   destination: './app',
   spec: 'app/spec',
   scripts: 'app/scripts',
@@ -10,9 +12,16 @@ const paths = {
 };
 
 gulp.task('run_index', function() {
-  run('node index.js');
+  run('node --harmony index.js');
 });
 
 gulp.task('default', function() {
   run('run_index');
+});
+
+gulp.task('lint', () => {
+  return gulp.src(paths.js)
+    .pipe(eslint())
+    .pipe(eslint.format())
+    .pipe(eslint.failAfterError());
 });

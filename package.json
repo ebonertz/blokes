@@ -25,12 +25,29 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.16.0",
+    "eslint": "^3.12.2",
     "minimist": "latest",
+    "run-sequence": "^1.2.2",
     "sphere-node-sdk": "^1.9",
+    "sphere-node-utils": "^0.9.1",
     "underscore": "^1.8.3",
     "underscore-mixins": "^0.1.4"
   },
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-import": "^1.16.0",
+    "eslint-plugin-jasmine": "^2.1.0",
+    "eslint-plugin-jsx-a11y": "^2.2.2",
+    "eslint-plugin-react": "^6.3.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-jasmine": "^2.4.0",
+    "gulp-rimraf": "^0.2.0",
+    "gulp-shell": "^0.5.2",
+    "gulp-watch": "^4.3.6",
+    "gulp-zip": "^3.2.0",
+    "jasmine": "^2.5.2",
+    "jasmine-reporters": "^2.2.0",
+    "jasmine-spec-reporter": "^2.5.0"
   }
 }

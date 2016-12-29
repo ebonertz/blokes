@@ -1,0 +1,29 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "extends": "airbnb/base",
+  "rules": {
+    "no-unused-vars": "warn",
+    "no-console": "off",
+    "arrow-body-style": "off",
+    "indent": [
+      "error",
+      2,
+      { "MemberExpression": 1 }
+    ],
+    "consistent-return": "off",
+    "no-else-return": "off",
+    "newline-per-chained-call": [
+      "warn",
+      { "ignoreChainWithDepth": 2 }
+    ],
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true, "optionalDependencies": false, "peerDependencies": false}]
+  },
+  "env": {
+    "browser": false,
+    "es6": true,
+    "node": true
+  }
+}
