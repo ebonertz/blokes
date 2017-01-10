@@ -3,7 +3,6 @@ const Config = require('./config.js');
 const argv = require('minimist')(process.argv.slice(2));
 
 const client = new SphereClient(Config);
-// console.log(`SphereClient: ${SphereClient}`)
 
 client.customers.fetch()
   .then((result) => {
